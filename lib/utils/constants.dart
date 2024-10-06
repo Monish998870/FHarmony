@@ -22,7 +22,7 @@ class Constants {
 
   static const apple = 'assets/vectors/apple.svg';
   static const broccoli = 'assets/vectors/broccoli.svg';
-  static const cheese = 'assets/vectors/cheese.svg';
+  static const grains = 'assets/vectors/grains.svg';
   static const meat = 'assets/vectors/meat.svg';
 
   static const background = 'assets/images/background.png';

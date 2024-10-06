@@ -45,7 +45,7 @@ class HomeView extends GetView<HomeController> {
                         ),
                       ),
                       subtitle: Text(
-                        'Amelia Barlow',
+                        'Deepika',
                         style: theme.textTheme.headline5?.copyWith(
                           fontWeight: FontWeight.normal,
                         ),

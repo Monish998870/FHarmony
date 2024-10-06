@@ -11,10 +11,10 @@ class CategoryView extends GetView<CategoryController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Category', style: context.theme.textTheme.headline3),
+        title: Text('Track Your Orders', style: context.theme.textTheme.headline3),
         centerTitle: true,
       ),
-      body: const NoData(text: 'This is Category Screen'),
+      body: const NoData(text: 'No Internet'),
     );
   }
 }

@@ -101,7 +101,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
               child: Text(
                 '1kg, ${controller.product.price}\$',
                 style: theme.textTheme.headline3?.copyWith(
-                  color: theme.accentColor,
+                  color: theme.canvasColor,
                 ),
               ).animate().fade().slideX(
                 duration: 300.ms,

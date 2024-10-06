@@ -31,7 +31,7 @@ class CartItem extends GetView<CartController> {
               Text(
                 '1kg, ${product.price}\$',
                 style: theme.textTheme.headline5?.copyWith(
-                  color: theme.accentColor,
+                  color: theme.canvasColor,
                 ),
               ),
             ],

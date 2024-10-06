@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as pbf;
 import 'package:get/get.dart';
 
 import '../../../../utils/constants.dart';
@@ -73,8 +73,8 @@ class BaseView extends GetView<BaseController> {
           onPressed:() => Get.toNamed(Routes.CART),
           child: GetBuilder<BaseController>(
             id: 'CartBadge',
-            builder: (_) => Badge(
-              position: BadgePosition.bottomEnd(bottom: -16, end: 13),
+            builder: (_) => pbf.Badge(
+              position: pbf.BadgePosition.bottomEnd(bottom: -16, end: 13),
               badgeContent: Text(
                 controller.cartItemsCount.toString(),
                 style: theme.textTheme.bodyText2?.copyWith(
@@ -82,9 +82,9 @@ class BaseView extends GetView<BaseController> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              badgeStyle: BadgeStyle(
+              badgeStyle: pbf.BadgeStyle(
                 elevation: 2,
-                badgeColor: theme.accentColor,
+                badgeColor: theme.canvasColor,
                 borderSide: const BorderSide(color: Colors.white, width: 1),
               ),
               child: CircleAvatar(

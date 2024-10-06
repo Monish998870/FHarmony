@@ -17,7 +17,7 @@ class DummyHelper {
   static List<CategoryModel> categories = [
     CategoryModel(id: 1, title: 'Fruits', image: Constants.apple),
     CategoryModel(id: 2, title: 'Vegetables', image: Constants.broccoli),
-    CategoryModel(id: 3, title: 'Cheeses', image: Constants.cheese),
+    CategoryModel(id: 3, title: 'Grains', image: Constants.grains),
     CategoryModel(id: 4, title: 'Meat', image: Constants.meat),
   ];
 
