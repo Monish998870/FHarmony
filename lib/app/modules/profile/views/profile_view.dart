@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../../../utils/constants.dart';
+import '../../../components/custom_button.dart';
 import '../../../components/no_data.dart';
 import '../controllers/profile_controller.dart';
 
@@ -14,7 +16,7 @@ class ProfileView extends GetView<ProfileController> {
     final theme = context.theme;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile', style: context.theme.textTheme.headline3),
+        title: Text('Profile', style: context.theme.textTheme.displaySmall),
         centerTitle: true,
       ),
     body: SingleChildScrollView(
@@ -31,16 +33,22 @@ class ProfileView extends GetView<ProfileController> {
               ),
           ),
           SizedBox(height: 10),
-          Text('Deepika', style: context.theme.textTheme.headline3),
-          SizedBox(width: 200,
-              child: ElevatedButton(
-              onPressed: (){},
-            style: ElevatedButton.styleFrom(
-
-            backgroundColor: Colors.green, side: BorderSide.none, shape: const StadiumBorder()),
-        child:  Text("EditProfile", style: context.theme.textTheme.headline3)
-    ),
-      ),
+          Text('Deepika', style: context.theme.textTheme.displaySmall),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 70.w,vertical: 10.h),
+            child: CustomButton(
+              text: 'Edit Profile',
+              onPressed: () => {},
+              fontSize: 16.sp,
+              radius: 50.r,
+              verticalPadding: 16.h,
+              hasShadow: false,
+            ).animate().fade().slideY(
+              duration: 300.ms,
+              begin: 1,
+              curve: Curves.easeInSine,
+            ),
+          ),
         SizedBox(height: 30),
         const Divider(),
      SizedBox(height: 10),
@@ -54,7 +62,7 @@ class ProfileView extends GetView<ProfileController> {
   ),
   child: const Icon(Icons.mail,color: Colors.grey),
   ),
-  title: Text("deepika1@gmail.com", style: context.theme.textTheme.headline3),
+  title: Text("deepika1@gmail.com", style: context.theme.textTheme.displaySmall),
   trailing: Container(
   width: 30,
   height: 30,
@@ -73,7 +81,7 @@ class ProfileView extends GetView<ProfileController> {
               ),
               child: const Icon(Icons.phone,color: Colors.grey),
             ),
-            title: Text("+91 8056289534", style: context.theme.textTheme.headline3),
+            title: Text("+91 8056289534", style: context.theme.textTheme.displaySmall),
             trailing: Container(
               width: 30,
               height: 30,
@@ -92,7 +100,7 @@ class ProfileView extends GetView<ProfileController> {
               ),
               child: const Icon(Icons.mail,color: Colors.grey),
             ),
-            title: Text("MyOrders", style: context.theme.textTheme.headline3),
+            title: Text("MyOrders", style: context.theme.textTheme.displaySmall),
             trailing: Container(
               width: 30,
               height: 30,
@@ -112,7 +120,7 @@ class ProfileView extends GetView<ProfileController> {
               ),
               child: const Icon(Icons.settings,color: Colors.grey),
             ),
-            title: Text("Settings", style: context.theme.textTheme.headline3),
+            title: Text("Settings", style: context.theme.textTheme.displaySmall),
             trailing: Container(
               width: 30,
               height: 30,

@@ -46,7 +46,7 @@ class WelcomeView extends GetView<WelcomeController> {
                 30.verticalSpace,
                 Text(
                   'Get your groceries delivered to your home',
-                  style: theme.textTheme.headline1,
+                  style: theme.textTheme.displayLarge,
                   textAlign: TextAlign.center,
                 ).animate().fade().slideY(
                   duration: 300.ms,
@@ -56,7 +56,7 @@ class WelcomeView extends GetView<WelcomeController> {
                 24.verticalSpace,
                 Text(
                   'The best delivery app in town for delivering your daily fresh groceries',
-                  style: theme.textTheme.bodyText1,
+                  style: theme.textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ).animate().fade().slideY(
                   duration: 300.ms,

@@ -4,7 +4,6 @@ import 'package:table_calendar/table_calendar.dart';
 import '../../../components/no_data.dart';
 import '../controllers/calendar_controller.dart';
 
-
 class CalendarView extends GetView<CalendarController> {
   const CalendarView({Key? key}) : super(key: key);
 
@@ -12,7 +11,7 @@ class CalendarView extends GetView<CalendarController> {
   Widget build(BuildContext context) {
   return Scaffold(
   appBar: AppBar(
-  title: Text('Calendar', style: context.theme.textTheme.headline3),
+  title: Text('Calendar', style: context.theme.textTheme.displaySmall),
   centerTitle: true,
   ),
   body:  CalendarPage(),
@@ -40,6 +39,7 @@ class _CalendarPageState extends State<CalendarPage> {
 
   @override
   Widget build(BuildContext context) {
+    var theme = context.theme;
     return Scaffold(
       //appBar: AppBar(
         //title: Text('Simple Calendar'),
@@ -55,7 +55,7 @@ class _CalendarPageState extends State<CalendarPage> {
             },
             calendarStyle: CalendarStyle(
               selectedDecoration: BoxDecoration(
-                color: Colors.green,
+                color: theme.primaryColor,
                 shape: BoxShape.circle,
               ),
               todayDecoration: BoxDecoration(

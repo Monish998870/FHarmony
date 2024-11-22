@@ -10,7 +10,7 @@ dependencies:
   get: # for state management and context less stuff
   flutter_screenutil: # make app responsive
   shared_preferences: # shared preferences persistence key value store
-  flutter_launcher_icons: # change app icon
+
   change_app_package_name: # change package name
   rename_app: ^1.6.1 # rename app
   flutter_svg: # for svg icons
@@ -21,6 +21,7 @@ dependencies:
   flutter: 
     sdk: flutter
   table_calendar: ^3.1.2
+
 dev_dependencies:
   mockito:
   flutter_lints:
@@ -31,12 +32,12 @@ dev_dependencies:
   flutter_test: 
     sdk: flutter
 
-flutter_icons:
+  flutter_launcher_icons: ^0.14.1
+flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/images/app_icon.png"
-  adaptive_icon_background: "#FFFFFF"
-  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
+  image_path: "assets/images/app_icon_foreground.png"
+
 
 flutter: 
   uses-material-design: true

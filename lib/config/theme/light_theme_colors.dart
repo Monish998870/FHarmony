@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class LightThemeColors
 {
   //dark swatch
-  static const Color primaryColor = Color(0xFF23AA49);
-  static const Color primaryColorLight = Color(0xFF23AA49);
+  static const Color primaryColor = Color(0xFF0F52BA);
+  static const Color primaryColorLight = Colors.white;
   static const Color primaryColorDark = Colors.white;
   static const Color accentColor = Color(0xFFFF324B);
   static const Color canvasColor = Color(0xFFF3F5F7);

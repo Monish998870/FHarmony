@@ -26,8 +26,6 @@ class MyTheme {
         hintColor: isLight ? LightThemeColors.hintTextColor : DarkThemeColors.hintTextColor,
         // divider color
         dividerColor: isLight ? LightThemeColors.dividerColor : DarkThemeColors.dividerColor,
-        // app background color
-        backgroundColor: isLight ? LightThemeColors.backgroundColor : DarkThemeColors.backgroundColor,
         scaffoldBackgroundColor: isLight ? LightThemeColors.scaffoldBackgroundColor : DarkThemeColors.scaffoldBackgroundColor,
 
         // progress bar theme
@@ -48,7 +46,7 @@ class MyTheme {
         chipTheme: MyStyles.getChipTheme(isLightTheme: isLight),
 
         // icon theme
-        iconTheme: MyStyles.getIconTheme(isLightTheme: isLight),
+       // iconTheme: MyStyles.getIconTheme(isLightTheme: isLight), colorScheme: ColorScheme(background: isLight ? LightThemeColors.backgroundColor : DarkThemeColors.backgroundColor),
     );
   }
 

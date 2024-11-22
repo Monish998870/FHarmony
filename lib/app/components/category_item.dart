@@ -27,7 +27,7 @@ class CategoryItem extends StatelessWidget {
             child: SvgPicture.asset(category.image),
           ).animate().fade(duration: 200.ms),
           10.verticalSpace,
-          Text(category.title, style: theme.textTheme.headline6)
+          Text(category.title, style: theme.textTheme.titleLarge)
             .animate().fade().slideY(
               duration: 200.ms,
               begin: 1,

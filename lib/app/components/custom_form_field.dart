@@ -128,7 +128,7 @@ class _CustomFormFieldState extends State<CustomFormField> {
           //cursorHeight: 15,
           autovalidateMode: AutovalidateMode.onUserInteraction,
           initialValue: widget.initialValue,
-          style: MyStyles.getTextTheme(isLightTheme: Get.isDarkMode).bodyText2!.copyWith(
+          style: MyStyles.getTextTheme(isLightTheme: Get.isDarkMode).bodyMedium!.copyWith(
             fontSize: widget.textSize ?? 14.sp,
             color: widget.textColor ?? Colors.black.withOpacity(0.8),
           ),
